@@ -1,0 +1,33 @@
+.contact_btn{
+    height: 200px;
+    width: 200px;
+}
+
+
+#contacts-ctr{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact{
+    background-color: beige;
+    padding: 70px;
+    margin:10px;
+}
+
+.contact-label{
+    border-color: red;
+    border-style: solid;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+#contact{
+    text-align:center;
+    padding: 10%;
+    padding-top: 5%;
+}

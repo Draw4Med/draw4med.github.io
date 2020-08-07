@@ -1,0 +1,12 @@
+@font-face {
+    font-family: FuturaSTD;
+    src: url('../fonts/FuturaStdBook.woff') format('woff');
+}
+
+#events{
+    color: #374785;
+    padding: 10%;
+    padding-top:5%;
+    font-family: FuturaSTD;
+    text-align: center;
+}

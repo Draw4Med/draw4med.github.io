@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/submissions.css">
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Color Strip -->
+    <div class="topstrip">
+
+    </div>
+    <!-- Navbar -->
+    <nav class="navigation dark">
+        <div class="nav-left">
+            <a href="./index.html">
+                <!-- <img width=100 height=100 src="./assets/dm42.png"> -->
+                <h4>Draw4Med</h4>
+            </a>
+        </div>
+        <div class="nav-right">
+            <div>
+                <a href="./our_work.html">Our Work</a>
+            </div>
+            <div>
+                <a href="./events.html">Events</a>
+            </div>
+            <div>
+                <a href="./submissions.html">Submissions</a>
+            </div>
+            <div>
+                <a href="./stories.html">Stories</a>
+            </div>
+            <div>
+                <a href="./involve.html">Get Involved</a>
+            </div>
+            <div>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div id="content">
+        <!-- Intro -->
+        <div id="submissions_intro" class="container center-text">
+            <h2>D4M Submissions</h2>
+            <br />
+            <p id="submit_msg">
+                Please fill in the information below and submit your artwork. Make sure that your uploaded artwork is
+                either a JPEG, PDF, or HEIC file. If there are any issues with your submission, we will email you to
+                resolve the situation. In the description box, describe your artwork and explain the meaning behind the
+                piece. Share your story! We want your voice to be heard through your artwork! Thank you!
+
+            </p>
+        </div>
+        <!-- End Intro -->
+
+        <div id="submission_content" class="container">
+            <form id="submit_form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>First Name</label>
+                        <input id="first_name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>City, State/Country</label>
+                        <input id="location" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Last Initial</label>
+                        <input id="last_init" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input id="email" type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Age</label>
+                        <input id="age" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Parent/Guardian Signature (if you are 12 years old or under)</label>
+                        <input id="signature" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input id="agreement" class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            I consent to the release of my artwork.
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload Art</label>
+                    <input id="artwork" type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-row">
+                    <label for="validationTextarea"> [Theme #1: Quarantine Edition] Please talk about something
+                        interesting you have been able to accomplish during quarantine! (2 paragraphs minimum)</label>
+                    <textarea id="art_description" class="form-control is-invalid" id="validationTextarea"
+                        placeholder="Required description"></textarea>
+                </div>
+                <br />
+                <button id="submit_btn" type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/submissions.js"></script>
+</footer>
+
+</html>

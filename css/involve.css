@@ -1,0 +1,47 @@
+@font-face{
+    font-family: katahdin;
+    src: url("../fonts/katahdin-round.regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: FuturaSTD;
+    src: url('../fonts/FuturaStdBook.woff') format('woff');
+}
+
+#lead-name{
+    color: white;
+    text-shadow: none;
+    font-family: katahdin;
+    font-size: 4em;
+}
+
+
+#join_us{
+    color: #374785;
+    /* padding: 5%; */
+}
+
+#join_us input{
+    padding: 1%;
+    border-radius: 7%;
+    border-style: none;
+    background-color: rgb(228, 226, 226);
+    margin: 1%;
+}
+
+#join_us_btn{
+    background-color: rgb(41, 79, 247)!important;
+    color: white;
+    border-style: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5px;
+}
+
+#join_us{
+    padding: 2%;
+}
