@@ -14,7 +14,10 @@
 }
 
 .contact{
-    background-color: beige;
+    /* background-color: beige; */
+    color: #F76C6C;
+    border: 2px #F76C6C;
+    border-style: solid;
     padding: 70px;
     margin:10px;
 }

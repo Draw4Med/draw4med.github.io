@@ -190,7 +190,7 @@ body {
     min-height:400;
     padding: 5%;
     border-width: 2px;
-    border-color: red;
+    border-color: #f76c6c;
     border-style: solid;
     /* display: flex;
     flex-direction: column;
